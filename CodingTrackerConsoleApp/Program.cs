@@ -6,7 +6,7 @@ class Program
 {
     static void Main(string[] args)
     {
-         string connectionString = @"Data Source=habit-Tracker.db";
+         string connectionString = @"Data Source=Habit-Tracker.db";
        using (var connection = new SqliteConnection(connectionString))
        {
                 connection.Open();
@@ -15,15 +15,14 @@ class Program
             //@ sign allows the use of multi line sql statements
             //belows are the columns that are gonna exist within the tableset
 
-                tableCmd.CommandText = @"CREATE TABLE IF NOT EXISTS new_habit(
+                tableCmd.CommandText = @"CREATE TABLE IF NOT EXISTS new_habit (
                     Id INTEGER PRIMARY KEY AUTOINCREMENT,
                     Date TEXT,
                     Quantity INTEGER
-                )";
+                    )";
 
                 tableCmd.ExecuteNonQuery();
                 connection.Close();
-
        }
         
 
