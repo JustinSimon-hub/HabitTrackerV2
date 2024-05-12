@@ -5,8 +5,8 @@ using Microsoft.Data.Sqlite;
 class Program
 {
     static void Main(string[] args)
-    {
-         string connectionString = @"Data Source=Habit-Tracker.db";
+    {        
+         string connectionString = @"Data Source=habit-Tracker.db";
        using (var connection = new SqliteConnection(connectionString))
        {
                 connection.Open();
