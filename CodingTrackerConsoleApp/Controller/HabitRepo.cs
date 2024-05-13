@@ -5,38 +5,34 @@ using Microsoft.Data.Sqlite;
 
 namespace CodingTrackerConsoleApp.Controller
 {
-	public class HabitRepo
+	public  class HabitRepo
 	{
-        //conn string
       
 
-        public HabitRepo(string dbFilePath)
+      
+
+        public  void GetAllRecords()
+        {
+                
+
+        }
+
+        public  void ViewRecord()
         {
 
         }
 
-
-        public void ViewAllrRecords()
+        public   void InsertRecord()
         {
 
         }
 
-        public void ViewRecord()
-        {
-
-        }
-
-        public void InsertRecord()
-        {
-
-        }
-
-        public void DeleteRecord()
+        public  void DeleteRecord()
         {
 
         }
 		
-		public void UpdateRecord()
+		public  void UpdateRecord()
         {
 
         }
